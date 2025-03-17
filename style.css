@@ -1,0 +1,409 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    animation: gradientAnimation 12s ease infinite; /* Animatsiya davomiyligi va tezligini o'zgartirish */
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    padding: 5px 1; 
+}
+
+
+
+
+
+
+                                                    /* LOGO */
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 50px; /* Rasm o‘lchami */
+    transition: 0.2s ease-in-out;
+}
+
+.logo span {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+/* Yaltirash effekti */
+.logo a:hover img, 
+.logo a:hover span {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+                                                /* NAVBAR */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #20a548; /* Ko'k rang */
+}
+
+
+
+
+
+
+
+                                             /* SOCIAL_BUTTON */
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.btn.telegram {
+    background-color: #1a9e4c;
+}
+
+.btn.twitter {
+    background-color: #333;
+}
+
+.btn.telegram:hover {
+    background-color: #62ca86;
+}
+
+.btn.twitter:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+                                             /* HERO */
+
+.hero {
+    text-align: center;
+    padding: 140px 40px;
+    background: linear-gradient(to right, #1d1d1d, #2a2a2a); /* To'qroq ranglar */
+    background-size: 200% 200%; /* Gradientning kattaligini sozlash */
+    animation: gradientAnimation 12s ease infinite; /* Animatsiya davomiyligi va tezligini o'zgartirish */
+}
+
+/* Animatsiyaning tafsilotlari */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(to right, #000000, #323232,#2d2d2d, #020124); /* Boshlang'ich holat */
+    }
+
+    25% {
+        background: linear-gradient(to right, #000000, #2d2d2d,#323232, #000000);
+    }
+
+    50% {
+        background: linear-gradient(to right, #1c1c1c, #131212,#2d2d2d, #010110);
+    }
+
+    75% {
+        background: linear-gradient(to right, #1f1f1f, #2d2d2d, #323232, #000000); /* O'rtada ranglar o'zgaradi */
+    }
+    100% {
+        background: linear-gradient(to right, #000000, #323232,#2d2d2d, #010101); /* Nihoyat holat */
+    }
+}
+
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    line-height: 1.3; /* Satirlar orasidagi masofa */
+    max-width: 80%; /* Yozuvni sahifa kengligiga moslashtirish */
+    word-wrap: break-word; /* So‘zlarning o‘ta uzunligi holatida avtomatik ravishda qirqiladi */
+    text-align: center; /* Matnni markazga joylashtirish */
+    margin: 0 auto; /* Markazga joylashtirish uchun */
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 60%; /* Yozuvni sahifa kengligiga moslashtirish */
+    margin: 0 auto; /* Markazga joylashtirish */
+    text-align: center; /* Matnni markazga joylashtirish */
+}
+
+.ai {
+    font-weight: bold;
+    display: inline-block;
+    animation: color-wave 4s infinite, glow 1.5s ease-in-out infinite; /* Ranglar to'lqini va yaltirash animatsiyalari */
+}
+
+/* Ranglar to'lqini animatsiyasi */
+@keyframes color-wave {
+    0% {
+        color: #4dd0b6; /* Yashil ko‘k */
+    }
+    25% {
+        color: #2ecc71; /* Yashil */
+    }
+    50% {
+        color: #2745b1; /* Ko‘k */
+    }
+    75% {
+        color: #30934b8c; /* Binafsha */
+    }
+    100% {
+        color: #1abc9c; /* Yashil ko‘k */
+    }
+}
+
+
+.hero .btn {
+    padding: 12px 24px;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #ffffff; /* Tugma rangi */
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    
+}
+
+.hero .btn:hover {
+    background-color: #28a745; /* Hover holatidagi rang */
+}
+
+.hero .btn.copied {
+    background-color: #8292d2; /* Tugma "copied" holatida yashil rang */
+}
+
+.hero-image {
+    max-width: 100%;  /* Rasmning kengligi ekran o'lchamiga moslashadi */
+    height: auto;     /* Rasmning balandligi nisbatan o'zgaradi */
+    display: block;
+    margin: 0px auto; /* Rasmni markazlashtirish */
+    border-radius: 0px; /* Yumshoq burchaklar */
+}
+
+
+
+.features, .token-metrics {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-box, .metric-box {
+    background-color: #1b1b1b;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature-box i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #00ff99;
+}
+
+.token-metrics {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.metrics {
+    display: flex; /* Yonma-yon qilish */
+    justify-content: center; /* Markazga olish */
+    gap: 20px; /* Oralig‘ni sozlash */
+}
+
+.metric-box {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.338); /* Orqa fon shaffofroq */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 150px; /* Juda kichik bo‘lib ketmasligi uchun */
+}
+
+
+.metric-box h3 {
+    font-size: 30px;
+    color: #00ff99;
+}
+
+
+
+
+
+.footer {
+    background-color: #1b1b1b00; /* Qorong‘i fon */
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #00ff99; /* Yashil aksent */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #20a548; /* Yashil rang o‘zgarishi */
+}
+
+
+
+
+
+
+
+
+
+/* 📱 Telefon va kichik ekranlar uchun */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        max-width: 100%;
+    }
+
+    .hero p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .hero .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .feature-container, .metrics {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .feature-box, .metric-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    
+}
+
+/* 📱 Juda kichik ekranlar (iPhone SE, Galaxy Fold) uchun */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .metrics {
+        gap: 10px;
+    }
+
+    .metric-box {
+        padding: 30px;
+    }
+
+    .feature-box, .metric-box {
+        width: 100%;
+    }
+}
+
+
+
