@@ -6,11 +6,12 @@ html {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    animation: gradientAnimation 12s ease infinite; /* Animatsiya davomiyligi va tezligini o'zgartirish */
+    animation: gradientAnimation -1s ease infinite; /* Animatsiya davomiyligi va tezligini o'zgartirish */
     color: white;
 }
 
 header {
+    background: linear-gradient(to right, #18134b, #18134b,#18134b, #18134b); /* Boshlang'ich holat */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,30 +126,15 @@ header {
 .hero {
     text-align: center;
     padding: 140px 40px;
-    background: linear-gradient(to right, #1d1d1d, #2a2a2a); /* To'qroq ranglar */
+    background: linear-gradient(to right, #18134b, #18134b,#18134b, #18134b); /* Boshlang'ich holat */
     background-size: 200% 200%; /* Gradientning kattaligini sozlash */
     animation: gradientAnimation 12s ease infinite; /* Animatsiya davomiyligi va tezligini o'zgartirish */
 }
 
 /* Animatsiyaning tafsilotlari */
 @keyframes gradientAnimation {
-    0% {
-        background: linear-gradient(to right, #000000, #323232,#2d2d2d, #020124); /* Boshlang'ich holat */
-    }
-
-    25% {
-        background: linear-gradient(to right, #000000, #2d2d2d,#323232, #000000);
-    }
-
-    50% {
-        background: linear-gradient(to right, #1c1c1c, #131212,#2d2d2d, #010110);
-    }
-
-    75% {
-        background: linear-gradient(to right, #1f1f1f, #2d2d2d, #323232, #000000); /* O'rtada ranglar o'zgaradi */
-    }
     100% {
-        background: linear-gradient(to right, #000000, #323232,#2d2d2d, #010101); /* Nihoyat holat */
+        background: linear-gradient(to right, #18134b, #18134b,#18134b, #18134b); /* Boshlang'ich holat */
     }
 }
 
