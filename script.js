@@ -1,5 +1,5 @@
 // Contract address
-const contractAddress = "Soon"; // O'zgarish: haqiqiy contract address ni shu yerga yozing
+const contractAddress = "https://odin.fun/token/2bay"; // O'zgarish: haqiqiy contract address ni shu yerga yozing
 
 // Copy tugmasi
 const copyButton = document.getElementById('copyBtn');
